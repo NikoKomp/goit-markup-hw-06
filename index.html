@@ -402,6 +402,33 @@
                     </use>
                 </svg>
             </button>
+            <div class="form">
+                <p class="form-head">Оставьте свои данные, мы вам перезвоним</p>
+                <form>
+                    <label>
+                        <p class="modal-text">Имя</p> 
+                        <input  type="text" name="username">
+                        
+                    </label>
+                    <label>
+                        <p class="modal-text">Телефон</p> 
+                        <input type="tel" name="phone-number">
+                    </label>
+                    <label>
+                        <p class="modal-text">Почта</p>  
+                        <input type="email" name="email">
+                    </label>
+                    <label>
+                        <p class="modal-text">Коментарий</p> 
+                        <textarea name="feedback" placeholder="Введите текст"></textarea>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="agree" value="agree" checked />
+                        Соглашаюсь с рассылкой и принимаю <span> Условия договора</span>
+                      </label>
+                    <button type="button" class="button-first">Отправить</button>
+                </form>
+            </div>
         </div>
     </div>
     <script src="./js/modal.js"></script>

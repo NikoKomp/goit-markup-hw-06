@@ -713,3 +713,50 @@ img {
   opacity: 0;
   pointer-events: none;
 }
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form{
+  padding: 40px;
+}
+.form-head{
+  font-weight: bold;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+padding-bottom: 12px;
+}
+input {
+  padding: 8px;
+  font-family: inherit;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;
+}
+.modal-text{
+  font-weight: normal;
+font-size: 12px;
+line-height: 1.16;
+
+letter-spacing: 0.01em;
+
+color: #757575;
+margin-bottom: 4px;
+
+}
+textarea{
+  border: 1px solid rgba(33, 33, 33, 0.2);
+box-sizing: border-box;
+border-radius: 4px;
+  font-weight: normal;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+
+color: rgba(117, 117, 117, 0.5);
+}
