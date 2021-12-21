@@ -1,1 +1,1 @@
-https://nikokomp.github.io/goit-markup-hw-05/
+https://nikokomp.github.io/goit-markup-hw-06/
