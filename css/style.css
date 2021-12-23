@@ -737,6 +737,8 @@ input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  background-image: url(/image/symbol-defs-hw-06.svg#icon-1);
+
 }
 .modal-text {
   font-weight: normal;
@@ -777,7 +779,10 @@ textarea {
   font-size: inherit;
   color: var(--button-color);
 }
-
+.button-modal-center{
+  display: flex;
+  justify-content:  center;
+}
 .button-modal {
   cursor: pointer;
   width: 200px;
@@ -790,6 +795,7 @@ textarea {
   border-radius: 4px;
   margin-left: 12px;
 }
+
 .footer-social {
   margin-right: 93px;
 }
