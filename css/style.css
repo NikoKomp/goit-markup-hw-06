@@ -78,8 +78,7 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-.link:hover,
-:focus {
+.link:hover .link:focus {
   color: var(--button-color);
 }
 body {
@@ -717,6 +716,7 @@ label {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  position: relative;
 }
 .form {
   padding: 40px;
@@ -731,14 +731,22 @@ label {
   color: #212121;
   margin-bottom: 12px;
 }
+.name-icon :focus {
+  border: none;
+}
 input {
+  outline: none;
+}
+.name-icon {
   padding: 8px;
   font-family: inherit;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  background-image: url(/image/symbol-defs-hw-06.svg#icon-1);
-
+  padding-left: 42px;
+}
+.name-icon:focus {
+  border: 1px solid var(--button-color);
 }
 .modal-text {
   font-weight: normal;
@@ -750,7 +758,8 @@ input {
   color: #757575;
   margin-bottom: 4px;
 }
-textarea {
+.input-text {
+  height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -759,12 +768,19 @@ textarea {
   line-height: 1.16;
   letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
   font-family: inherit;
   font-size: 12px;
   line-height: 14px;
   padding: 12px 16px;
-  margin-bottom: 10px;
+}
+.input-text::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+textarea {
+  outline: none;
+}
+.input-text:focus {
+  outline: 1px solid var(--button-color);
 }
 .conditions-text {
   font-weight: normal;
@@ -779,9 +795,9 @@ textarea {
   font-size: inherit;
   color: var(--button-color);
 }
-.button-modal-center{
+.button-modal-center {
   display: flex;
-  justify-content:  center;
+  justify-content: center;
 }
 .button-modal {
   cursor: pointer;
@@ -813,4 +829,37 @@ textarea {
   font-size: 14px;
   line-height: 1.14;
   margin-bottom: 20px;
+}
+.label-icon {
+  display: block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 55%;
+  left: 15px;
+}
+.label-icon-tel {
+  display: block;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 55%;
+  left: 15px;
+}
+.label-icon-mail {
+  display: block;
+  width: 15px;
+  height: 12px;
+  position: absolute;
+  top: 55%;
+  left: 15px;
+}
+.name-icon:focus ~ .label-icon {
+  fill: var(--button-color);
+}
+.name-icon:focus ~ .label-icon-tel {
+  fill: var(--button-color);
+}
+.name-icon:focus ~ .label-icon-mail {
+  fill: var(--button-color);
 }

@@ -417,25 +417,34 @@
                 </svg>
             </button>
             <div class="form">
-                <p class="form-head">Оставьте свои данные, мы вам перезвоним</p>
                 <form>
+                    <p class="form-head">Оставьте свои данные, мы вам перезвоним</p>
                     <label>
                         <p class="modal-text">Имя</p> 
-                        <input  type="text" name="username" >
-                        
+                        <input  type="name" name="name" class="name-icon">
+                        <svg class="label-icon">
+                            <use href="image/symbol-defs-hw-06.svg#icon-1"> </use>
+                         </svg>
                     </label>
                     <label>
                         <p class="modal-text">Телефон</p> 
-                        <input type="tel" name="phone-number">
+                        <input type="tel" name="phone-number" class="name-icon">
+                        <svg class="label-icon-tel">
+                            <use href="image/symbol-defs-hw-06.svg#icon-2"> </use>
+                        </svg>
                     </label>
                     <label>
                         <p class="modal-text">Почта</p>  
-                        <input type="email" name="email">
+                        <input type="email" name="email" class="name-icon">
+                        <svg class="label-icon-mail">
+                            <use href="image/symbol-defs-hw-06.svg#icon-3"> </use>
+                        </svg>
                     </label>
                     <label>
                         <p class="modal-text">Комментарий</p> 
-                        <textarea name="feedback" rows="5" placeholder="Введите текст"></textarea>
+                        <textarea class="input-text" name="feedback" placeholder="Введите текст"></textarea>
                     </label>
+                   
                     <label>
                         <div class="conditions-text">
                         <input type="checkbox" name="agree" value="agree" checked />
