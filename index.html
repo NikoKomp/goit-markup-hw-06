@@ -390,19 +390,20 @@
                 </li>
             </ul>
         </div>
-       
-            <div class="mailing-form">
+        <form>
             <h2 class="mailing-head"> ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-            <div class="mailing">
-            <form>
-                <label>
-                   <input type="email" name="email" placeholder="E-mail">
+            <label class="mailing">
+        
+                   <input type="email" class="e-mail-window" name="email" placeholder="E-mail">
+                <button type="button" class="button-modal">Подписаться
+                    <svg class="icon-telegram"  width="24" height="24" >
+                        <use href="image/symbol-defs-hw-06.svg#icon-4"></use>
+                    </svg>
+                </button>
+                </div>
                 </label>
-                
             </form>
-            <button type="button" class="button-modal">Подписаться</button>
-            </div>
-            </div>
+        
         </div>
         </address>
         </div>
@@ -444,13 +445,11 @@
                         <p class="modal-text">Комментарий</p> 
                         <textarea class="input-text" name="feedback" placeholder="Введите текст"></textarea>
                     </label>
-                   
-                    <label>
-                        <div class="conditions-text">
-                        <input type="checkbox" name="agree" value="agree" checked />
-                        Соглашаюсь с рассылкой и принимаю <span class="blue-text-conditions"> <u>Условия договора</u> </span>
-                      </label>
-                    </div>
+                <input type="checkbox" name="agree" value="agree" class="policy" id="policy-chek">
+                    <label class="conditions-text" for="policy-chek">
+            
+                        Соглашаюсь с рассылкой и принимаю &nbsp; <a href="#"> <u class="blue-text-conditions">Условия договора</u> </a>
+                    
                     <div class="button-modal-center">
                     <button type="button" class="button-modal">Отправить</button>
                 </div>
