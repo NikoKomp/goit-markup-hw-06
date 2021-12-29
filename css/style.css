@@ -933,3 +933,6 @@ textarea {
 .mailing-form {
   margin-left: auto;
 }
+.subscribe{
+  display: flex;
+}
